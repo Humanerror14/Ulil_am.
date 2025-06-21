@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project pertama</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cf0b2856d4.js" crossorigin="anonymous"></script>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src=download.png class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Front End Developer</p>
+            <h1>Hi, i'm <span>Ulil</span><br>from Indonesia</h1>
+        </div>
+    </div>
+</div>
+<!-- -------About------- -->
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="12069_Ulilamri.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>A dedicated graduate of Islamic Communication and Broadcasting with robust experience in teaching and media
+                    strategies. Possessing excellent communication skills and a profound understanding of Islamic broadcasting
+                    principles. Passionate about public speaking and negotiation, with proven adaptability to new environments. Fluent in
+                    English and committed to advancing educational values through media platforms. And now i'm learning some new stuff about IT, especially About Web Development.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experiences')">Experiences</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contens active-tab" id="Skills">
+                        <ul>
+                        <li><span>UI/UX</span><br>Web Designed and Apps interface</li>
+                        <li><span>App Development</span><br>Build an Apps for Android device and IOS</li>
+                        <li><span>Data analyst</span><br>Data visualization, Data cleaning, machine learning, Mathmatics</li>
+                        <li><span>Communication skills</span><br>negotiation, interpersonal Comminacations Skill, </li>
+                     </ul>
+
+                       
+                    </div>
+                    <div class="tab-contens" id="Experiences">
+                        <ul>
+                        <li><span>2022-2023</span><br>Teacher of Fiqh, Nahwu and Sharaf at Islamic boarding School, Samalanga<br>Administrator of Boys dormitory</li>
+                        <li><span>2023-2024</span><br>Teacher at Fiqh, Nahwu and Sharaf Ma'hadal Ulumiddinniyah Islamiyah, Samlanga </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contens" id="Education">
+                        <ul>
+                        <li><span>2016-2022</span><br>Fiqh wa Ushul at Ma'hadal Ulumiddiniyah Islamiyah, Samalanga</li>
+                        <li><span>2019-2023</span><br>Islamic Communication and Broadcasting at AL-AZIZIYAH ISLAMIC INSTITUTE, Samalanga</li>
+                     </ul>                     
+                    </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- --------services--------- -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Creating a unique design tailored to the client's needs and brand,Ensuring the website looks good on various devices (desktop, tablet, and smartphone),
+                        Web Development, Building the client-facing part of the website that users interact with, using HTML, CSS, and JavaScript.Routine maintenance and updates to keep the website up-to-date and functioning properly.Fixing technical issues that arise.</p>                       
+                </div>
+                <div>
+                    <h2>UI/UX</h2>
+                    <p>Conducted user research through interviews and surveys to understand user needs.<br>
+                        Created wireframes and interactive prototypes using Figma and Adobe XD.<br>
+                        Managed usability testing and gathered feedback for design iterations.<br>
+                        Collaborated with the development team to ensure accurate design implementation.<br>
+                        By including these tasks, you can effectively showcase your relevant skills and experience for a UI/UX Designer position. Be sure to tailor them to your specific experiences and the results you have achieved.</p>                       
+                </div>
+                <div>
+                    <h2>App Design</h2>
+                    <p>Proficient in design tools: Sketch, Figma, Adobe XD, InVision<br>
+                        Strong understanding of user-centered design principles<br>
+                        Experience with usability testing and user research<br>
+                        Excellent communication and collaboration skills<br>
+                        Knowledge of mobile app development processes</p>                       
+                </div>
+
+            </div>
+        </div>
+     </div>
+     <!-- ------contact----- -->
+      <div id="contact">
+        <div class="cont-pers">
+            <h1 class="sub-tittle">Contact Me!</h1>
+            <p><i class="fa-regular fa-envelope"></i>aalilamri@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>089505163971</p>
+            <div class="social-media">
+              <a href="https://m.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+    
+            
+            <a href="Ulil_Amri_CV_Styled_with_Lines.pdf" download type="button" class="btn">
+                <i class="fa-solid fa-download"></i>Download cv
+            </a>
+
+
+        </div>
+      </div>
+   <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contens");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+
+   </script>
+</body>
+</html>
